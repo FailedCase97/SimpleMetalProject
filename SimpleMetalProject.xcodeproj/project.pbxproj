@@ -13,6 +13,17 @@
 		359D011729138B0B00DC2EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359D011529138B0B00DC2EB8 /* Main.storyboard */; };
 		359D011929138B0C00DC2EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359D011829138B0C00DC2EB8 /* Assets.xcassets */; };
 		359D011C29138B0C00DC2EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359D011A29138B0C00DC2EB8 /* LaunchScreen.storyboard */; };
+		359D012A29138BAE00DC2EB8 /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D012529138BAE00DC2EB8 /* EditingViewController.swift */; };
+		359D012B29138BAE00DC2EB8 /* CanvasContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D012729138BAE00DC2EB8 /* CanvasContainerView.swift */; };
+		359D012C29138BAE00DC2EB8 /* RenderingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D012829138BAE00DC2EB8 /* RenderingCanvas.swift */; };
+		359D012F29138C5300DC2EB8 /* UIImage+VIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D012E29138C5300DC2EB8 /* UIImage+VIImage.swift */; };
+		359D015529138CB000DC2EB8 /* RenderingResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D013529138CAF00DC2EB8 /* RenderingResources.swift */; };
+		359D015E29138CB000DC2EB8 /* BasicDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D014429138CB000DC2EB8 /* BasicDrawer.swift */; };
+		359D015F29138CB000DC2EB8 /* BasicDrawer.metal in Sources */ = {isa = PBXBuildFile; fileRef = 359D014529138CB000DC2EB8 /* BasicDrawer.metal */; };
+		84E96BEC2B7CBFE6007FF5C6 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E96BEB2B7CBFE6007FF5C6 /* cat.jpg */; };
+		84E96BEE2B7CC016007FF5C6 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E96BED2B7CC016007FF5C6 /* dog.jpg */; };
+		84E96BF12B7CD2AE007FF5C6 /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E96BEF2B7CD2AE007FF5C6 /* landscape.jpg */; };
+		84E96BF22B7CD2AE007FF5C6 /* portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E96BF02B7CD2AE007FF5C6 /* portrait.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		359D011829138B0C00DC2EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359D011B29138B0C00DC2EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		359D011D29138B0C00DC2EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359D012529138BAE00DC2EB8 /* EditingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
+		359D012729138BAE00DC2EB8 /* CanvasContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasContainerView.swift; sourceTree = "<group>"; };
+		359D012829138BAE00DC2EB8 /* RenderingCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderingCanvas.swift; sourceTree = "<group>"; };
+		359D012E29138C5300DC2EB8 /* UIImage+VIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+VIImage.swift"; sourceTree = "<group>"; };
+		359D013529138CAF00DC2EB8 /* RenderingResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderingResources.swift; sourceTree = "<group>"; };
+		359D014429138CB000DC2EB8 /* BasicDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDrawer.swift; sourceTree = "<group>"; };
+		359D014529138CB000DC2EB8 /* BasicDrawer.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BasicDrawer.metal; sourceTree = "<group>"; };
+		84E96BEB2B7CBFE6007FF5C6 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		84E96BED2B7CC016007FF5C6 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		84E96BEF2B7CD2AE007FF5C6 /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpg; sourceTree = "<group>"; };
+		84E96BF02B7CD2AE007FF5C6 /* portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,74 @@
 		359D010E29138B0B00DC2EB8 /* SimpleMetalProject */ = {
 			isa = PBXGroup;
 			children = (
+				359D012D29138C5300DC2EB8 /* Categories */,
+				359D013029138CAF00DC2EB8 /* MetalResources */,
+				359D012329138BAE00DC2EB8 /* ViewControllers */,
 				359D010F29138B0B00DC2EB8 /* AppDelegate.swift */,
 				359D011129138B0B00DC2EB8 /* SceneDelegate.swift */,
-				359D011329138B0B00DC2EB8 /* ViewController.swift */,
 				359D011529138B0B00DC2EB8 /* Main.storyboard */,
 				359D011829138B0C00DC2EB8 /* Assets.xcassets */,
 				359D011A29138B0C00DC2EB8 /* LaunchScreen.storyboard */,
 				359D011D29138B0C00DC2EB8 /* Info.plist */,
+				84E96BEA2B7CBFE6007FF5C6 /* images */,
 			);
 			path = SimpleMetalProject;
+			sourceTree = "<group>";
+		};
+		359D012329138BAE00DC2EB8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				359D011329138B0B00DC2EB8 /* ViewController.swift */,
+				359D012529138BAE00DC2EB8 /* EditingViewController.swift */,
+				359D012629138BAE00DC2EB8 /* Subviews */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		359D012629138BAE00DC2EB8 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				359D012729138BAE00DC2EB8 /* CanvasContainerView.swift */,
+				359D012829138BAE00DC2EB8 /* RenderingCanvas.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		359D012D29138C5300DC2EB8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				359D012E29138C5300DC2EB8 /* UIImage+VIImage.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		359D013029138CAF00DC2EB8 /* MetalResources */ = {
+			isa = PBXGroup;
+			children = (
+				359D013529138CAF00DC2EB8 /* RenderingResources.swift */,
+				359D014329138CB000DC2EB8 /* BasicDrawer */,
+			);
+			path = MetalResources;
+			sourceTree = "<group>";
+		};
+		359D014329138CB000DC2EB8 /* BasicDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				359D014429138CB000DC2EB8 /* BasicDrawer.swift */,
+				359D014529138CB000DC2EB8 /* BasicDrawer.metal */,
+			);
+			path = BasicDrawer;
+			sourceTree = "<group>";
+		};
+		84E96BEA2B7CBFE6007FF5C6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84E96BED2B7CC016007FF5C6 /* dog.jpg */,
+				84E96BEB2B7CBFE6007FF5C6 /* cat.jpg */,
+				84E96BEF2B7CD2AE007FF5C6 /* landscape.jpg */,
+				84E96BF02B7CD2AE007FF5C6 /* portrait.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +206,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E96BF22B7CD2AE007FF5C6 /* portrait.jpg in Resources */,
 				359D011C29138B0C00DC2EB8 /* LaunchScreen.storyboard in Resources */,
+				84E96BEE2B7CC016007FF5C6 /* dog.jpg in Resources */,
 				359D011929138B0C00DC2EB8 /* Assets.xcassets in Resources */,
 				359D011729138B0B00DC2EB8 /* Main.storyboard in Resources */,
+				84E96BEC2B7CBFE6007FF5C6 /* cat.jpg in Resources */,
+				84E96BF12B7CD2AE007FF5C6 /* landscape.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359D015529138CB000DC2EB8 /* RenderingResources.swift in Sources */,
+				359D015E29138CB000DC2EB8 /* BasicDrawer.swift in Sources */,
 				359D011429138B0B00DC2EB8 /* ViewController.swift in Sources */,
 				359D011029138B0B00DC2EB8 /* AppDelegate.swift in Sources */,
+				359D012C29138BAE00DC2EB8 /* RenderingCanvas.swift in Sources */,
+				359D012A29138BAE00DC2EB8 /* EditingViewController.swift in Sources */,
+				359D015F29138CB000DC2EB8 /* BasicDrawer.metal in Sources */,
+				359D012F29138C5300DC2EB8 /* UIImage+VIImage.swift in Sources */,
+				359D012B29138BAE00DC2EB8 /* CanvasContainerView.swift in Sources */,
 				359D011229138B0B00DC2EB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,8 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W6PN8LZUG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SimpleMetalProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,6 +395,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xcode.project.SimpleMetalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,8 +407,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W6PN8LZUG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SimpleMetalProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +425,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xcode.project.SimpleMetalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

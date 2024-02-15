@@ -1,24 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mfl-Wh-Ilg">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleMetalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDf-aO-EBf">
+                                <rect key="frame" x="137" y="405" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open Picker"/>
+                                <connections>
+                                    <action selector="pickerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWs-Bh-o98"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pgc-d6-b3e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="763.07692307692309" y="-54.028436018957343"/>
+        </scene>
+        <!--Editing View Controller-->
+        <scene sceneID="I6c-Uk-UTw">
+            <objects>
+                <viewController storyboardIdentifier="EditingViewController" id="hSJ-r8-PHP" customClass="EditingViewController" customModule="SimpleMetalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wcA-el-OQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMk-cg-B9W" customClass="CanvasContainerView" customModule="SimpleMetalProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="67" width="390" height="390"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sMk-cg-B9W" secondAttribute="height" id="2ad-75-QIe"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lbo-j9-McZ">
+                                <rect key="frame" x="18" y="618" width="354" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="hSJ-r8-PHP" eventType="valueChanged" id="OlO-CD-oe7"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0oA-WM-sRu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lbo-j9-McZ" firstAttribute="leading" secondItem="0oA-WM-sRu" secondAttribute="leading" constant="20" id="Cw6-fM-EbT"/>
+                            <constraint firstItem="lbo-j9-McZ" firstAttribute="centerY" secondItem="wcA-el-OQ5" secondAttribute="centerY" multiplier="3/2" id="KV0-Fv-PCe"/>
+                            <constraint firstItem="lbo-j9-McZ" firstAttribute="centerX" secondItem="wcA-el-OQ5" secondAttribute="centerX" id="WQc-O8-Qn7"/>
+                            <constraint firstItem="sMk-cg-B9W" firstAttribute="leading" secondItem="0oA-WM-sRu" secondAttribute="leading" id="Wuq-7Q-1a5"/>
+                            <constraint firstItem="0oA-WM-sRu" firstAttribute="trailing" secondItem="lbo-j9-McZ" secondAttribute="trailing" constant="20" id="biM-l1-WxC"/>
+                            <constraint firstItem="0oA-WM-sRu" firstAttribute="trailing" secondItem="sMk-cg-B9W" secondAttribute="trailing" id="rTn-DX-yI0"/>
+                            <constraint firstItem="sMk-cg-B9W" firstAttribute="top" secondItem="0oA-WM-sRu" secondAttribute="top" constant="20" id="yVs-ei-Qh3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="sMk-cg-B9W" id="v1i-Ir-UJS"/>
+                        <outlet property="opacitySlider" destination="lbo-j9-McZ" id="YT6-1v-LBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XEE-fi-wXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="-54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YW9-KZ-7xz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mfl-Wh-Ilg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mye-TW-kbm">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lyj-fs-brd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8De-yA-vqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166.15384615384616" y="-54.028436018957343"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
